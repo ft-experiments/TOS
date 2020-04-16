@@ -1,10 +1,16 @@
+#include "console_color.h"
 #include "console.h"
+
+
 void init(void)
 {
-    
-    
-    kprintf("Hello World!");
-    
-    
-    
+
+
+    clearscreen();
+    kprintf("Hello World",green);
+ 
+
 }
+
+
+

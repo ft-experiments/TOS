@@ -11,7 +11,10 @@
 .int    MB_CHECKSUM
 
 .section .text
-
+    //COPY AND PASTE (:
+    
+mov $0x23, %ax
+mov %ax, %ds
 // Init ist eine Funktion aus init.c
 .extern init
 
@@ -20,8 +23,14 @@
 // sichtbar)
 .global _start
 _start:
+
+
+
+
     // Stack initialisieren
     mov $kernel_stack, %esp
+    
+
 
     // C-Code aufrufen
     call init
