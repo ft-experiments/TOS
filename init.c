@@ -5,10 +5,8 @@
 void init(void)
 {
 
-
     clearscreen();
     kprintf("Hello World",green);
- 
 
 }
 

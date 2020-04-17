@@ -19,6 +19,8 @@ void kprintf(char input[],int textcolor) {
     }
 }
 
+
+
 void kprintfint(int in,int color) {
 
     char *temp = (char *) 0x00;
