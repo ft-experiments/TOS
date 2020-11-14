@@ -6,7 +6,7 @@ void init(void)
 {
 
     clearscreen();
-    kprintf("Hello World",green);
+    kprintfhex('0x121',green);
 
 }
 
