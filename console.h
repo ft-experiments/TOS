@@ -40,7 +40,7 @@ void kprintfhex(char hex,int color) {  //TODO geht noch net
 }
 
 
-void clearscreen() {
+void clear_console() {
     char *video = (char *) 0xb8000;
 
     for(int i = 0;i<10000;i++) { //TODO hier die Size einstellen
