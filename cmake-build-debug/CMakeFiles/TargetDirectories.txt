@@ -1,2 +1,2 @@
-/run/media/tim/Festplatte²/GitHub/TOS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/run/media/tim/Festplatte²/GitHub/TOS/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/felix/Dokumente/GitHub/TOS/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/felix/Dokumente/GitHub/TOS/cmake-build-debug/CMakeFiles/edit_cache.dir

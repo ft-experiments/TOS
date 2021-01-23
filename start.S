@@ -34,6 +34,7 @@ _start:
 
     // C-Code aufrufen
     call init
+    call run
 
     // Falls wir jemals aus init zurueckkommen sollten, sperren wir die Interrupts und
     // halten einfach den Prozessor an. (man braucht ihn ja nicht unnötig heißlaufen lassen.)
