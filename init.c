@@ -1,14 +1,18 @@
 #include "console_color.h"
 #include "console.h"
-#include "vga.h"
+#include "types.h"
+#include "utils.h"
 
 
 void init(void) {
-    init_vga();
+    //init_vga();
 }
 
 void run() {
-    draw_rect(0, 0, VGA_MAX_WIDTH - 1, VGA_MAX_HEIGHT - 1, BRIGHT_GREEN);
+    init_ascii(WHITE,BLACK);
+    clear_ascii_buffer(WHITE, BLACK);
+    print_text("Hallo Welt die\nkuh 123455\nmacht muh");
+
     // draw_rect(2, 2, 30, 30, YELLOW);
     //  draw_rect(VGA_MAX_WIDTH - 33, 2, 30, 30, YELLOW);
     //  draw_rect(2, VGA_MAX_HEIGHT - 33, 30, 30, YELLOW);
@@ -23,42 +27,9 @@ void run() {
     //  for(uint16 i = 0; i < 50; i+=3){
     //     draw_circle(80, 100, 50-i, BRIGHT_RED);
     // }
-    while(1) {
-        int x = 240;
-        while (x>10) {
-            clear_console();
-            for (uint16 i = 0; i < 20; i += 1) {
-                draw_circle(x, x, i, BRIGHT_MAGENTA);
-            }
 
 
-            if (x > 10)
-                x--;
-
-        }
-        x = 0;
-        while (x<240) {
-            clear_console();
-            for (uint16 i = 0; i < 20; i += 1) {
-                draw_circle(x, 240-x, i, BRIGHT_BLUE);
-            }
-
-
-            if (x < 240)
-                x++;
-
-        }
-    int counter =0;
-        while(counter<99999999) {
-            counter++;
-        }
-
-        clear_screen();
-    }
-
-
-
-    kprintf("Hallo Welt", GREEN);
+   // kprintf("Hallo Welt", GREEN);
 }
 
 
