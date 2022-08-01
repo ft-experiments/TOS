@@ -1,2 +1,2 @@
 # TOS
-Ein OS das eingentlich nichts kann
+A basic proof-of-concept OS
